@@ -13,7 +13,7 @@ function App() {
     <div className='container-fluid fondoPurple'>
       <Navbar />
       <hr />
-      <ItemListContainer greeting="Este es el body" />
+      <ItemListContainer texto="Esteban" />
       <CardDisco />
       <Cupones />
       <Footer />

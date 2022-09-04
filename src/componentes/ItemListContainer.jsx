@@ -1,9 +1,15 @@
 import React from "react";
+import ItemCount from "./ItemCount";
+import Title from "./Title";
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({texto}) => {
+    const onAdd = (quantity) => {
+        console.log (`compraste ${quantity} unidades`)
+    }
     return (
         <div>
-            <h1 className="greeting">{greeting}</h1>
+            <Title  greeting ={texto}/>
+            <ItemCount initial={1} stock={5} onAdd={onAdd} />
         </div>
     )
 }

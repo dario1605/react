@@ -1,14 +1,14 @@
 import React from "react";
-import Carrito from "./Carrito";
+import Cartwidget from "./CartWidget";
 import logo from "./imagenes/logo.png"
 
 const Navbar= () => {
     return (
         <div className="container">
-            <nav class="navbar bg-light ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src={logo} alt="" width="48" height="38" class="d-inline-block align-text-top"/>
+            <nav className="navbar bg-light ">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#">
+                        <img src={logo} alt="" width="48" height="38" className="d-inline-block align-text-top"/>
                         My Music !
                     </a>
                     <ul className="nav ">
@@ -21,7 +21,7 @@ const Navbar= () => {
                         <li className="nav-item">
                             <a className="nav-link linkNavbar" href="">Nosotros</a>
                         </li>
-                        <a class="navbar-brand" href=""> <Carrito /></a>
+                        <a className="navbar-brand" href=""> <Cartwidget /></a>
                     </ul>
                 </div>
             </nav>
