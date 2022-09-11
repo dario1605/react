@@ -50,3 +50,42 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* Estilos Item Detail.jsx*/
+
+.ContainerItemDetail {
+    width: 98%;
+    margin: auto;
+}
+
+@media screen and (min-width:768px) {
+    .ContainerItemDetail {
+        width: 70%;
+    }
+}
+
+.detail {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail__image {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .detail__image {
+        width: 50%;
+    }
+
+    .content {
+        padding-left: 3rem;
+        width: 50%;
+    }
+}

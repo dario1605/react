@@ -3,7 +3,8 @@ import './App.css';
 import CardDisco from './componentes/CardDisco';
 import Cupones from './componentes/Cupones';
 import Footer from './componentes/Footer';
-import ItemListContainer from './componentes/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer';
+//import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
 
 
@@ -13,7 +14,7 @@ function App() {
     <div className='container-fluid fondoPurple'>
       <Navbar />
       <hr />
-      <ItemListContainer texto="Esteban" />
+      <ItemDetailContainer />
       <CardDisco />
       <Cupones />
       <Footer />
