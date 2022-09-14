@@ -1,3 +1,28 @@
+Titulo de la app : My Music! 
+
+Cree varias secciones de la app y luego las importe en app.js
+
+Luego instale  react router dom para poder moverme dentro de cada seccion de la pagina :
+
+* Si vamos a la ruta /categoria/:categoriaId' nos llevaria a la seccion de ItemListContainer
+
+ donde tengo un array con productos que, utilizando el useParams, me renderice a los productos que se quiere
+
+ mostrar segun su categoria ( discos o vinilos ).
+
+
+* Por otro lado , si vamos a la ruta 'detalle/:detalleId' nos llevaria a la seccion de ItemDetailContainer
+
+ donde a travez de useParams llamo a un producto por su Id , en este caso tuve que hacer un parseInt para 
+
+ cambiar a formato String .
+
+ 
+ La idea es crear una pagina donde puedas comprar discos de bandas 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
