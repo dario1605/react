@@ -22,7 +22,12 @@ useEffect(() => {
 }, [detalleId])
 
     return (
-        <ItemDetail data={data} />
+        <>
+         {
+          data? <ItemDetail data={data} />:<h1>Cargando...</h1>
+         }
+         
+        </>
     )
 }
 
