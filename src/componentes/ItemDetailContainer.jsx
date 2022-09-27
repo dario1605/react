@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from "react";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-import { albums } from "./Products";
 
 /*const albums = [
             {id: 1, image: "https://i.scdn.co/image/ab67616d0000b27354bea3780cb998f903356012", title: "Led Zeppelin" },
@@ -14,12 +14,10 @@ const [data, setData] = useState ({});
 const { detalleId } = useParams(); 
 
 useEffect(() => {
-    const getData = new Promise (resolve => {
-        setTimeout (() => {
-            resolve(albums);
-        }, 2000);
-    });
-    getData.then(res => setData(res.find(album => album.id === parseInt(detalleId))));
+    const querydb = getFirestore();
+    const queryDoc = doc(querydb, 'products', detalleId);
+    getDoc(queryDoc)
+    .then(res => setData({ id: res.id, ...res.data() }))
 }, [detalleId])
 
     return (

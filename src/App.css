@@ -3,7 +3,7 @@
     padding: 0;
 }
 .fondoPurple {
-    background-color: rgb(127, 124, 130);
+    background-color: rgb(29, 47, 5);
 }
 
 .linkNavbar {
@@ -40,9 +40,30 @@
 
 /* Estilos Item.jsx*/
 
+.divAlbum {
+    border: 1px solid black;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(21, 98, 100, 0.317);
+    margin: 1rem;
+    border: 0.3rem solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
 .album {
-    display: block;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
     width: 300px;
+    border: solid 0.2rem white;
+    border-radius: 1rem;
+    background-color: greenyellow;
 }
 
 .album img {
@@ -54,8 +75,11 @@
 /* Estilos Item Detail.jsx*/
 
 .ContainerItemDetail {
+    text-align: center;
     width: 98%;
-    margin: auto;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
 }
 
 @media screen and (min-width:768px) {
