@@ -12,9 +12,6 @@
     margin: 1rem;
 }
 
-.divContainerCupones {
-    margin: 2rem;
-}
 
 .divContainerFooter {
     background-color: darkslategrey;
@@ -32,46 +29,17 @@
 
 .counter {
     width:fit-content ;
-    background-color: purple;
-    margin: 1rem;
+    margin: 4rem;
     padding: 1rem;
     text-align: center;
+    border-radius: 1rem;
 }
 
 /* Estilos Item.jsx*/
 
-.divAlbum {
-    border: 1px solid black;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(21, 98, 100, 0.317);
-    margin: 1rem;
-    border: 0.3rem solid black;
-    border-radius: 2rem;
-    padding: 1rem;
+.widthItem{
+    width: 20rem;
 }
-
-.album {
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    width: 300px;
-    border: solid 0.2rem white;
-    border-radius: 1rem;
-    background-color: greenyellow;
-}
-
-.album img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* Estilos Item Detail.jsx*/
 
 .ContainerItemDetail {
@@ -79,7 +47,9 @@
     width: 98%;
     margin: 2rem;
     padding: 1rem;
-    border: 1px solid black;
+    border: 0.3rem solid rgb(15, 17, 4);
+    border-radius: 1rem;
+
 }
 
 @media screen and (min-width:768px) {
@@ -89,8 +59,7 @@
 }
 
 .detail {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -127,3 +96,16 @@
     width: 200px;
     margin-right: 1rem;
 }
+
+/*Cart*/
+
+.contenedorCart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.3rem solid black;
+    border-radius: 0.5rem;
+  }
+
+ 

@@ -15,14 +15,14 @@ const ItemDetail = ({data}) => {
         addProduct(data, quantity);
     }
     return (
-        <div className="ContainerItemDetail">
+        <div className="ContainerItemDetail btn btn-outline-dark">
             <div className="detail">
                 <img className="detail__image" src={data.image} alt="" />
                 <div className="content">
                     <h1>{data.title}</h1>
                     {
                         goToCart
-                        ? <Link to="/cart">Finalizar Compra</Link>
+                        ? <Link to="/cart" className="btn btn-success">Finalizar Compra</Link>
                         :<ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>

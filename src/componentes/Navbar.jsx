@@ -13,10 +13,10 @@ const Navbar= () => {
                     </NavLink>
                     <ul className="nav ">
                         <li className="nav-item">
-                            <NavLink className="nav-link linkNavbar" to='/categoria/discos' >Discos</NavLink>
+                            <NavLink className="nav-link linkNavbar link-success" to='/categoria/discos' >Discos</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link linkNavbar" to='/categoria/vinilos' >Vinilos</NavLink>
+                            <NavLink className="nav-link linkNavbar link-success" to='/categoria/vinilos' >Vinilos</NavLink>
                         </li>
                         <NavLink className="navbar-brand" to='cart'> 
                             <Cartwidget />

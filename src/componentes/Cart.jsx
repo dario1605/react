@@ -28,20 +28,27 @@ const Cart = () =>{
     if (cart.length === 0) {
         return (
             <>
-              <p>No hay elementos en el Carrito</p>
-            <Link to='/'>Hacer compras</Link>
+            <div className="text-center alert alert-success" role="alert">
+                <p>No hay elementos en el Carrito</p>
+                <Link to='/' className="btn btn-success">Hacer compras</Link>
+            </div>
+              
             </>
         );
     }
     return (
         <>
+        <div className="contenedorCart btn btn-outline-dark">
             {
-                cart.map(product => <ItemCart key={product.id} product={product}/>)
+              cart.map(product => <ItemCart key={product.id} product={product}/>)
             }
             <p>
                 Total= {totalPrice()}
             </p>
-            <button onClick={handleClick}>Generar compra</button>
+            <Link to="/checkout" className="btn btn-outline-primary">Checkout</Link>
+            <button onClick={handleClick} className="btn btn-outline-success">Generar compra</button>
+        </div>
+            
         </>
     )
 }
